@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading__icon {
+  animation-name: spinning;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: linear;
+}
+
+.spinner__logo {
+  position: relative;
+  margin-left: 630px;
+  
+  top: 250px;
+  justify-content: center;
+}
+
+.joke {
+    font-family: Zen Tokyo Zoo ;
+    position: relative;
+    top: 80px;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.joke__setup {
+    color: rgb(216, 52, 79);
+    padding-bottom: 20px;
+}
+
+.joke__punchline {
+    color: rgb(19, 207, 192);
+    padding-bottom: 20px;
+}
+
+.joke__title {
+    font-size: 55px;
+}
+
+.joke__button {
+    height: 40px;
+    width: 80px;
+    font-family: Zen;
+    background-color: lightsalmon;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+@media screen 
+  and (max-device-width: 480px) 
+  and (orientation: portrait){
+    .joke {
+      position: relative;
+      right: 35px;
+      bottom: 35px;
+
+    }
+    } 
+
+
+
